@@ -38,7 +38,7 @@
             pkgs.elfutils
             pkgs.openssl
           ];
-      in pkgs.python3Packages.buildPythonApplication {
+      in pkgs.python311Packages.buildPythonApplication {
         pname = "virtme-ng";
         version = "1.22";
         src = pkgs.fetchgit {
